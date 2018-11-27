@@ -8,9 +8,7 @@ categories: Elasticsearch
 
 分析器内部分为`Analyzer`、`CharFilter`、`Tokenizer`、`TokenFilter`。
 
-其中`Analyzer`由其他三部分组成，`Tokenizer`为必要部分，其他两个非必要
-
-。
+其中`Analyzer`由其他三部分组成，`Tokenizer`为必要部分，其他两个非必要。
 
 数据进入分析器的流程：
 
@@ -91,7 +89,7 @@ public interface AnalysisPlugin {
 }
 ```
 
-# 3. Tokenizer开发
+# 4. Tokenizer开发
 
 Tokenizer文件结构：
 
