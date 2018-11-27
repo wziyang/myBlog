@@ -4,9 +4,9 @@ tags: Elasticsearch
 categories: Elasticsearch
 ---
 
-# 1. 插件开发
+# 插件开发
 ES提供两种方式用于插件开发，一种是继承Plugin抽象类，一种是继承Plugin抽象类后再实现相关的插件接口。
-# 2. 插件种类
+# 插件种类
 `ScriptPlugin`：脚本插件，ES默认的脚本语言是Painless，可自定义其他脚本语言，java、js等。
 
 `AnalysisPlugin`：分析插件，可扩展新的分析器，标记器，标记过滤器或字符过滤器等。

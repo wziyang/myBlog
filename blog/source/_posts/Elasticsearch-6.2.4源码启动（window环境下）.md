@@ -4,7 +4,7 @@ tags: Elasticsearch
 categories: Elasticsearch
 ---
 
-# 1. 获取源码和可运行的es
+# 获取源码和可运行的es
 
 1.1 首先从github上把es的源码拉下来并切换分支到v6.2.4版本（ps：es不同版本源码启动过程差异可能较大）。
 
@@ -16,7 +16,7 @@ git checkout v6.2.4
 
 1.2 到官网下载可运行的es
 
-# 2. 编译源码
+# 编译源码
 
 es是一个gradle项目，导入idea前需执行 gradle idea 命令，不然会报错。
 
@@ -51,7 +51,7 @@ allprojects{
 
 编译完成后便可用idea打开项目。
 
-# 3. 运行es
+# 运行es
 
 如何从源码运行es？
 

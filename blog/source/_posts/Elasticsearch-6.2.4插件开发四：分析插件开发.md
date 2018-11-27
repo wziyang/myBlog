@@ -4,7 +4,7 @@ tags: Elasticsearch
 categories: Elasticsearch
 ---
 
-# 1. 分析器介绍
+# 分析器介绍
 
 分析器内部分为`Analyzer`、`CharFilter`、`Tokenizer`、`TokenFilter`。
 
@@ -19,7 +19,7 @@ categories: Elasticsearch
 - Tokenizer：分词器，对数据进行分词操作，作为Analyzer的核心
 - TokenFilter：分词过滤器，对分词进行过滤，如lowercase将分词中存在的大写字母过滤成小写
 
-# 2. 分词结果解析
+# 分词结果解析
 
 ```json
 GET _analyze
@@ -67,7 +67,7 @@ GET _analyze
 
 - `position`表示分词的位置，注：match_phrase以`position`为标准
 
-# 3. 插件类
+# 插件类
 
 插件类需要继承Plugin类以及实现AnalysisPlugin接口，实现AnalysisPlugin接口可以重新其中的方法来提供指定的分析器：
 
@@ -89,7 +89,7 @@ public interface AnalysisPlugin {
 }
 ```
 
-# 4. Tokenizer开发
+# Tokenizer开发
 
 Tokenizer文件结构：
 

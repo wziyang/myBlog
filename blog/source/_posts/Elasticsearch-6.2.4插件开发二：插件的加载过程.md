@@ -4,7 +4,7 @@ tags: Elasticsearch
 categories: Elasticsearch
 ---
 
-# 1. 从源码看插件的加载过程
+# 从源码看插件的加载过程
 
 插件是在节点初始化的时候加载的，下面列举出部分关键代码，以搜索服务为例来介绍插件的加载过程：
 
@@ -54,7 +54,7 @@ public PluginsService(Settings settings, Path configPath, Path modulesDirectory,
 
 可以看出，首先，我们要有一个类继承Plugin类并且某些服务需要实现相应的插件接口（旧版es只需要继承Plugin便可修改各个模块，相关接口现已弃用）才能被发现。
 
-# 2. 搜索插件的加载过程
+# 搜索插件的加载过程
 
 接下来我们以搜索插件中的高亮部分为例，看看如何以插件的形式给es添加新的高亮类型。
 
