@@ -3,9 +3,9 @@
   <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
 
   <!-- JS库 sweetalert 可修改路径 -->
-  <script type="text/javascript" src="http://jslibs.wuxubj.cn/sweetalert_mini/jquery-1.7.1.min.js"></script>
-  <script src="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.mini.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.min.css">
   <p><span>文章作者:</span><a href="/" title="访问 {{ theme.author }} 的个人博客">{{ theme.author }}</a></p>
   <p><span>最后更新:</span>{{ page.updated.format("YYYY年MM月DD日 HH:MM:ss") }}</p>
   <p><span>原始链接:</span><a href="{{ url_for(page.path) }}" title="{{ page.title }}">https://wziyang.github.io{{ url_for(page.path) }}</a></p>
