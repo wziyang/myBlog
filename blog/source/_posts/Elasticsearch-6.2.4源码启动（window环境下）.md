@@ -1,12 +1,18 @@
 ---
 title: Elasticsearch-6.2.4源码启动（window环境下）
-tags: Elasticsearch
+tags: 
+- Elasticsearch
+- 源码
+- idea
 categories: Elasticsearch
+copyright: true
 ---
 
 # 获取源码和可运行的es
 
 1.1 首先从github上把es的源码拉下来并切换分支到v6.2.4版本（ps：es不同版本源码启动过程差异可能较大）。
+
+<!-- more-->
 
 git clone https://github.com/elastic/elasticsearch.git
 

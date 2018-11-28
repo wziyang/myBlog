@@ -1,12 +1,18 @@
 ---
 title: Elasticsearch-6.2.4插件开发四：分析插件开发
-tags: Elasticsearch
+tags: 
+- Elasticsearch
+- 插件
+- Analyzer
 categories: Elasticsearch
+copyright: true
 ---
 
 # 分析器介绍
 
 分析器内部分为`Analyzer`、`CharFilter`、`Tokenizer`、`TokenFilter`。
+
+<!-- more-->
 
 其中`Analyzer`由其他三部分组成，`Tokenizer`为必要部分，其他两个非必要。
 
@@ -15,9 +21,13 @@ categories: Elasticsearch
 ![Analyzer Pipeline](https://wziyang.github.io/images/插件/Signatures.svg)
 
 - Analyzer：分析器，对数据进行过滤、分词等操作
+
 - CharFilter：字符过滤器，最开始处理数据，过滤指定字符，如html标签过滤
+
 - Tokenizer：分词器，对数据进行分词操作，作为Analyzer的核心
+
 - TokenFilter：分词过滤器，对分词进行过滤，如lowercase将分词中存在的大写字母过滤成小写
+
 
 # 分词结果解析
 

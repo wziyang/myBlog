@@ -1,10 +1,16 @@
 ---
 title: Elasticsearch-6.2.4插件开发三：高亮插件开发
-tags: Elasticsearch
+tags: 
+- Elasticsearch
+- 插件
+- Highlight
 categories: Elasticsearch
+copyright: true
 ---
 
 首先，我们需要继承`Plugin`类使插件可以被es初始化时候加载，然后根据实际功能具体实现不同的插件接口，重写相关方法。高亮是搜索阶段的处理，我们可以看看`SearchPlugin`里的部分代码：
+
+<!-- more-->
 
 ```java
 public interface SearchPlugin {

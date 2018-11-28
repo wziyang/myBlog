@@ -1,12 +1,18 @@
 ---
 title: Elasticsearch-6.2.4插件开发二：插件的加载过程
-tags: Elasticsearch
+tags: 
+- Elasticsearch
+- 插件
+- 源码
 categories: Elasticsearch
+copyright: true
 ---
 
 ## 从源码看插件的加载过程
 
 插件是在节点（org.elasticsearch.node.Node）初始化的时候加载的，下面列举出部分关键代码，以搜索服务为例来介绍插件的加载过程：
+
+<!-- more-->
 
 ```java
 public Node(Environment environment) {

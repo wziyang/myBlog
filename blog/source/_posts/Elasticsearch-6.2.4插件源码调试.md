@@ -1,10 +1,16 @@
 ---
 title: Elasticsearch-6.2.4插件源码调试
-tags: Elasticsearch
+tags: 
+- Elasticsearch
+- 源码
+- 插件
 categories: Elasticsearch
+copyright: true
 ---
 
 正常es测试插件必须把插件打包好并放进plugins目录中，这样是很不方便的。而在源码中开发插件（将插件代码放入es源码里面）就可以不用每次都得把插件编译打包了，org.elasticsearch.node.Node（节点类，es启动时初始化节点的各个部分）的构造函数中就存在一个入口，可以在es启动时将我们的插件类加载进去。（ps：源码启动es可以看另一篇文章）
+
+<!-- more-->
 
 ```java
 public Node(Environment environment) {
